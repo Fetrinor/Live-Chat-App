@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "38229694855",
+    "firebase_url": "https://mobilfinal-c14ee-default-rtdb.firebaseio.com",
+    "project_id": "mobilfinal-c14ee",
+    "storage_bucket": "mobilfinal-c14ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38229694855:android:53c4fe110268f32b935b22",
+        "android_client_info": {
+          "package_name": "com.example.chat_mobil_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38229694855-4267ij527t9cjnts7dk02maoj8ppoonc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArl8TtL3UfNEpt8cglR7UZVNYoferjCzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38229694855-4267ij527t9cjnts7dk02maoj8ppoonc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

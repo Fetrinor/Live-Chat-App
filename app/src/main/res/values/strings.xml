@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="isim_giriniz">İsminizi Giriniz</string>
+    <string name="email_giriniz">E-mailinizi giriniz.</string>
+    <string name="sifre_giriniz">Şifrenizi giriniz.</string>
+    <string name="sifre_onay">Şifrenizi Onaylayınız</string>
+    <string name="kayitol">Kayıt Ol</string>
+    <string name="girisyap">Giriş Yap</string>
+    <string name="hesabinizYokMu">Hesabınız yok mu? Hemen edinin.</string>
+    <string name="users">Users</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gonder">Gönder</string>
+    <string name="numaram">201813709032 - Yusuf Can AKSOY</string>
+    <string name="mesaj_request">Mesaj İstekleri</string>
+    <string name="mesajgirisiyap">Mesajınızı buraya yazınız.</string>
+    <string name="mesajlar">MESAJLAR</string>
+    <string name="cikis_yap">Çıkış Yap</string>
+    <string name="hesabim">Hesabım</string>
+</resources>

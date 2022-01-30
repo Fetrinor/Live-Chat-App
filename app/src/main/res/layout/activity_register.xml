@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:id="@+id/RegisterLayout"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:text="@string/kayitol"
+        >
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputRegisterUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        android:layout_marginTop="15dp"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/et_RegisterUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/isim_giriniz"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:textColor="@color/KayitOlTextColor"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterEnabled="true"
+        app:counterMaxLength="35"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        android:layout_marginTop="15dp"
+        app:counterTextAppearance="@style/CounterStyle">
+
+        <EditText
+            android:id="@+id/et_RegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_giriniz"
+            android:inputType="textEmailAddress"
+            android:maxLength="35"
+            android:textColor="@color/KayitOlTextColor"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterEnabled="true"
+        app:counterMaxLength="35"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        android:layout_marginTop="15dp"
+        app:counterTextAppearance="@style/CounterStyle"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/et_RegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sifre_giriniz"
+            android:inputType="textPassword"
+            android:maxLength="35"
+            android:textColor="@color/KayitOlTextColor"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputRegisterPasswordConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:counterEnabled="true"
+        app:counterMaxLength="35"
+        app:boxCornerRadiusTopStart="20dp"
+        app:boxCornerRadiusBottomEnd="20dp"
+        android:layout_marginTop="15dp"
+        app:counterTextAppearance="@style/CounterStyle"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/et_RegisterPasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/sifre_onay"
+            android:inputType="textPassword"
+            android:maxLength="35"
+            android:textColor="@color/KayitOlTextColor"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/BtnRegister"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        android:text="@string/kayitol"
+        android:backgroundTint="#252525"
+        android:textColor="@color/KayitOlBtnTextColor"
+        android:textStyle="bold"
+        >
+    </Button>
+
+</LinearLayout>

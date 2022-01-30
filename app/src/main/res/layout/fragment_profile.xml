@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.ProfileFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hesabim"
+        android:textStyle="bold"
+        android:textSize="21sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileFragmentUserProfileImg"
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#000000"/>
+
+        <ImageView
+            android:id="@+id/profileFragment_newImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_camera"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_alignRight="@+id/profileFragmentUserProfileImg"
+            android:layout_alignBottom="@+id/profileFragmentUserProfileImg"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/profileFragmentEditTextUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:height="50dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:enabled="false"
+        android:background="@drawable/profile_edit_bg"/>
+
+    <EditText
+        android:text="sadasd"
+        android:id="@+id/profileFragmentEditTextUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:height="50dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:enabled="false"
+        android:background="@drawable/profile_edit_bg"/>
+
+    <Button
+        android:id="@+id/BtnsignOut"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:textSize="19sp"
+        android:text="@string/cikis_yap"
+        android:backgroundTint="#252525"
+        android:textColor="@color/KayitOlBtnTextColor"
+        android:textStyle="bold"
+        >
+    </Button>
+</LinearLayout>

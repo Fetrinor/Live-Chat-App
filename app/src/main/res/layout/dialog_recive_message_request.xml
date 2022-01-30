@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ReciveMessageRequest_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:text="@string/numaram"
+            android:textStyle="bold"
+            android:layout_gravity="center">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ReciveMessageRequest_imgClose"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_close"
+            app:tint="#000000"
+            android:layout_gravity="end"
+            android:layout_marginRight="6dp">
+
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ReciveMessageRequestLinearLayout"
+        android:layout_below="@id/ReciveMessageRequest_Toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:background="#000000">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mesaj_request"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ReciveMessageRequestRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ReciveMessageRequestLinearLayout">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

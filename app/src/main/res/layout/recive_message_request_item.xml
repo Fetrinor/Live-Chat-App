@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="8dp">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:id="@+id/ReciveMessageRequestItem_imgProfile"
+           android:layout_width="77dp"
+           android:layout_height="77dp"
+           app:civ_border_width="2dp"
+           app:civ_border_color="#000000">
+
+       </de.hdodenhof.circleimageview.CircleImageView>
+
+       <TextView
+           android:id="@+id/ReciveMessageRequestItem_txtMessage"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="12sp"
+           android:textStyle="bold"
+           android:text="Test Kullanıcısı sana mesaj göndermek istiyor."
+           android:layout_marginTop="12dp"
+           android:layout_marginLeft="5dp"
+           android:layout_marginRight="5dp"
+           android:layout_toStartOf="@+id/ReciveMessageRequestItemLinear"
+           android:layout_toEndOf="@+id/ReciveMessageRequestItem_imgProfile">
+
+       </TextView>
+
+       <LinearLayout
+           android:id="@+id/ReciveMessageRequestItemLinear"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentEnd="true"
+           android:layout_centerVertical="true">
+
+           <ImageView
+               android:id="@+id/ReciveMessageRequestItem_imgCancel"
+               android:layout_width="43dp"
+               android:layout_height="43dp"
+               android:src="@drawable/ic_close"
+               app:tint="#950000" />
+
+           <ImageView
+               android:id="@+id/ReciveMessageRequestItem_imgConfirm"
+               android:layout_width="43dp"
+               android:layout_height="43dp"
+               android:src="@drawable/ic_cofirm"
+               android:layout_marginStart="15dp"
+               app:tint="#950000" />
+
+       </LinearLayout>
+
+   </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

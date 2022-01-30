@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="490dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/send_message_dialog_bg">
+
+            <EditText
+                android:id="@+id/sendMessageDialogEditText"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/send_message_dialog_message_bg"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp">
+
+            <ImageView
+                android:id="@+id/sendMessageDialogSendClose"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/send_message_dialog_btn_bg"
+                android:src="@drawable/ic_close"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:padding="15dp">
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/sendMessageDialogSendMessageLinear"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:orientation="vertical"
+                android:background="@drawable/send_message_dialog_btn_bg"
+                android:gravity="center"
+                android:layout_marginLeft="40dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_sag_yon"
+                    android:background="@drawable/send_message_dialog_btn_bg">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gonder"
+                    android:textSize="12sp">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sendMessageDialogSendProfile"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/SendMessageCornerColor">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/sendMessageDialogUserName"
+        android:layout_below="@+id/sendMessageDialogSendProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="@color/SendMessageTextColor">
+
+    </TextView>
+</RelativeLayout>
