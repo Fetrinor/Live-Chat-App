@@ -1,3 +1,5 @@
+# Live Chat App
+
 Uygulamayı kullanan iki kullanıcının birbirleri ile canlı sohbet edebildiği bir mobil uygulama. 
 Android Studio ortamında yazılmıştır. Dil olarak Java seçilmiştir.
 Kayıt ve mesajları beklendiği gibi kullanabilmek için Firebase platformunu kullandım.
